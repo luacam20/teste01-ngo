@@ -1,4 +1,11 @@
 var information = [];
+
+const locaStorageCustomers = JSON.parse(localStorage.getItem('customersData'))
+
+if (localStorageCustomers.length >= 1) {
+    information = locaStorageCustomers;
+}
+
 function save() {
     var name = document.getElementById("inName").value;
     var phone = Number(document.getElementById("inPhone").value);
@@ -14,25 +21,28 @@ function save() {
 
     information.push({
         name: name, phone: phone, street: street, number: number, cep: cep, neighb: neighb
-    })
+    });
+
+    localStorage.setItem('customersData', JSON.stringify(information));
+
     inName.value = "";
     inPhone.value = "";
     inStreet.value = "";
     inNumber.value = "";
     inCep.value = "";
     inNboard.value = "";
+
     inName.focus();
-
-
-
-
 }
+
 function listar() {
     var answer = document.getElementById("inAnswer");
+
     if (information.length == 0) {
         alert("Não há informações salvas.");
         return;
     }
+
     var clist = "";
 
     for (var i = 0; i < information.length; i++) {
@@ -40,5 +50,18 @@ function listar() {
     }
 
     answer.innerHTML = `${clist}`;
-    console.log(list)
+}
+
+function loadLocalStorageData() {
+    var answer = document.getElementById("inAnswer");
+
+    const localStorageData = JSON.parse(localStorage.getItem('customersData'));
+
+    var clist = "";
+
+    for (var i = 0; i < localStorageData.length; i++) {
+        clist += "Nome: " + localStorageData[i].name + " | " + " Telefone: " + localStorageData[i].phone + " | " + " Rua: " + localStorageData[i].street + " | " + " n°: " + localStorageData[i].number + " | " + " CEP: " + localStorageData[i].cep + " | " + " Bairro: " + localStorageData[i].neighb + "\n";
+    }
+
+    answer.innerHTML = `${clist}`;
 }
