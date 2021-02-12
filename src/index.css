@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(32, 30, 30);  
+}
+
+#container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: inherit;
+    max-width: 100vw;
+    color: ivory;
+    text-align: center;   
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#namepage {
+    height: 50px;
+    background-color: rgb(63, 60, 60);
+    color: #fff;
+    border-radius: 8px;
+    font-family: Georgia, Times, 'Times New Roman', serif, Courier, monospace;
+    font-size: 15px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+    border-bottom-style: inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputs-container {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(63, 60, 60);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+#inputs-group-container {
+    display: flex;
+    padding: 16px;
+}
+
+#separator-container {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    padding-left: 0px;
+}
+
+input {
+    border-radius: 8px;
+    height: 26px;
+    border: 2px solid #ccc;
+    width: 200px;
+    margin-right: 8px;
+}
+
+#button {
+    width: 150px;
+    display: 70px ;
+    background-color:rgb(63, 60, 60);
+    border: 0;
+    padding: 8px;
+    color: #f35e5e;
+    border-radius: 8px;
+    height: 36px;
+}
+#end {
+    font-size: 16px; 
+    
+}
