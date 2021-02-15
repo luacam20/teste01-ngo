@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Cadastro de clientes</title>
 </head>
 
@@ -31,27 +31,27 @@
             </div>
 
             <div id="inputs-group-container">
+                <input type="text" placeholder="Cep" name="cep" id="inCep" onblur="cepSearch()">
+
                 <input type="text" placeholder="Rua" name="street" id="inStreet">
 
                 <input type="number" placeholder="Número" name="house-number" id="inNumber">
 
-                <input type="number" placeholder="Cep" name="cep" id="inCep">
-
-                <input type="text" placeholder="Bairro" name="neighborhood" id="inNboard">
+                <input type="text" placeholder="Bairro" name="neighborhood" id="inBairro">
             </div>
         </div>
+
         <div id="buttons">
             <input type="button" value="Salvar" id="button" onclick="save()">
             <input type="button" value="Listar" id="button" onclick="listar()">
-
-
         </div>
+
         <div id="end">
             <pre id="inAnswer"></pre>
         </div>
     </div>
 
 </body>
-<script src="/src/index.js"></script>
+<script src="./index.js"></script>
 
 </html>
