@@ -1,0 +1,1 @@
+Meu nome é Luana, tenho 17 anos e comecei a programar sozinha aos 16 anos, através de livros e cursos on-line. Sou muito dedicada, e procuro sempre aprender mais. Estou cursando técnico em desenvolvimento de sistemas e estou em busca de um estágio para que eu possa colocar em prática tudo que venho aprendendo, além de ter um contato mais direto e aprender novas tecnologias. 
